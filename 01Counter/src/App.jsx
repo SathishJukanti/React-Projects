@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Button from './components/Button'
 
 function App() {
   const [counter, setCounter] = useState(0)
@@ -24,15 +25,9 @@ function App() {
         <h1 className='text-6xl pt-20'>Counter App</h1>
         <h1 className='text-6xl pt-20'>{counter}</h1>
       <div>
-      <button className='text-4xl bg-slate-500 rounded-full mt-20 min-h-[100px] min-w-[200px]'
-      onClick={increaseVal}
-      >+</button>
-      <button className='text-4xl bg-slate-500 rounded-full mt-20 min-h-[100px] min-w-[200px] mr-5 ml-5'
-      onClick={resetVal}
-      >Reset</button>
-      <button className='text-4xl bg-slate-500 rounded-full mt-20 min-h-[100px] min-w-[200px]'
-      onClick={decreaseVal}
-      >-</button>
+      <Button btnText='+' clickHandler={increaseVal}/>
+      <Button btnText='Reset' clickHandler={resetVal} />
+      <Button btnText='-' clickHandler={decreaseVal}/>
       </div>
       </div>
     </>
