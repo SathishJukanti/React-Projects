@@ -47,12 +47,11 @@ function App() {
           className='h-[100px] w-[800px] mt-20 ml-20 rounded-lg shadow-lg'
           placeholder='Password'
           readOnly
-          ref={passwordRef}
+          ref={passwordRef} 
           />
           <button
           className='py-10 px-14 bg-orange-300 rounded-lg shadow-lg'
-          onClick={copyPasswordToClipboard}
-          >Copy
+          onClick={copyPasswordToClipboard}>Copy
           </button>
           <div className='flex my-10 mx-20'>
             <div className='  flex'>
