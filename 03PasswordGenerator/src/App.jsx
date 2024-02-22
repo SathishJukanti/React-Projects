@@ -49,12 +49,14 @@ function App() {
           readOnly
           ref={passwordRef} 
           />
+
           <button
           className='py-10 px-14 bg-orange-300 rounded-lg shadow-lg'
           onClick={copyPasswordToClipboard}>Copy
           </button>
+
           <div className='flex my-10 mx-20'>
-            <div className='  flex'>
+            <div className='flex'>
               <input 
               type="range" 
               min={8}
@@ -63,29 +65,37 @@ function App() {
               className='cursor-pointer'
               onChange={(e) => {setLength(e.target.value)}}
               />
+
               <label className='ml-4'>
-                Length: {length}
+              Length: {length}
               </label>
             </div>
+
             <div className='className="flex items-center ml-8'>
-              <input type="checkbox" 
+              <input 
+              type="checkbox" 
               defaultChecked={numAllowed}
               id='numberInput'
               onChange={() => {
                 setNumAllowed((prev) => !prev)
               }}
               />
-              <label className='ml-2'>Numbers</label>
+              <label 
+              className='ml-2'
+              >Numbers</label>
             </div>
             <div className='className="flex items-center ml-8'>
-              <input type="checkbox"
+              <input 
+              type="checkbox"
               defaultChecked={charAllowed}
               id='characterInput'
               onChange={() => {
                 setCharAllowed((prev) => !prev)
               }}
               />
-              <label className='ml-2'>Characters</label>
+              <label 
+              className='ml-2'
+              >Characters</label>
             </div>
           </div>
         </div>
