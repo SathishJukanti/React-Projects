@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <div className='min-h-[900px] w-full bg-slate-400 m-4 rounded-xl shadow-lg'>
+      <div className='min-h-[600px] w-full bg-slate-400 m-4 rounded-xl shadow-lg'>
         <h1 className='text-6xl pt-20'>Counter App</h1>
         <h1 className='text-6xl pt-20'>{counter}</h1>
       <div>
